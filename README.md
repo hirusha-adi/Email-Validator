@@ -1,37 +1,76 @@
-## Welcome to GitHub Pages
+## Email Validator
 
-You can use the [editor on GitHub](https://github.com/hirusha-adi/Email-Validator/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+- Validate Email Addresses easily by using web requests(`GET` and passing `email` paramater)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Additional Information: [Click Here](https://hirusha-adi.github.io/Sri-Lanka-Covid-19-Dashboard/) 
 
-### Markdown
+## Available Routes
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<table>
+<thead>
+  <tr>
+    <th>Route</th>
+    <th>Parameters</th>
+    <th>Information</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>/api</td>
+    <td>email (the email address)</td>
+    <td>return the results</td>
+  </tr>
+</tbody>
+</table>
 
-```markdown
-Syntax highlighted code block
+## Installing the Web Server
 
-# Header 1
-## Header 2
-### Header 3
+### Arch Linux
 
-- Bulleted
-- List
+run the commands below, line by line
 
-1. Numbered
-2. List
+```bash
+sudo pacman -Syyuu --noconfirm
+sudo pacman -S git python python-pip --noconfirm
+cd ~
+git clone https://github.com/hirusha-adi/Email-Validator.git
+cd Email-Validator
+pip3 install -r requirements.txt
+python3 validator.py # to start the web app
+# CTRL + Z
+# bg
+# disown -h
+```
+### Ubuntu/Debian
 
-**Bold** and _Italic_ and `Code` text
+run the commands below, line by line
 
-[Link](url) and ![Image](src)
+```bash
+sudo apt install && sudo apt upgrade -y
+sudo apt install git python3 python3-pip -y
+cd ~
+git clone https://github.com/hirusha-adi/Email-Validator.git
+cd Email-Validator
+pip3 install -r requirements.txt
+python3 validator.py # to start the web app
+# CTRL + Z
+# bg
+# disown -h
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Windows
 
-### Jekyll Themes
+1. Download and install Python3. Make sure to 'Add to PATH' when install python3
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hirusha-adi/Email-Validator/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+![image1](https://www.tutorials24x7.com/uploads/2019-12-26/files/3-tutorials24x7-python-windows-install.png)
 
-### Support or Contact
+2. Download the code as a .zip file from this Github Reposotory
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![image2](https://cdn.discordapp.com/attachments/935515175073763398/937186561299197952/unknown.png)
+
+(this above image might not be the same)
+
+3. Extract the downloaded `.zip` file
+4. open `cmd` in that folder
+5. run `pip install -r requirements.txt`
+6. run `python validator.py` to start the web app
