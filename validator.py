@@ -70,9 +70,7 @@ def validateEmailDomain(email: str = None):
         return False
 
 
-@app.route("/")
 @app.route("/api")
-@app.route("/api/check")
 def checkemail():
     global DISPOSABLE_DOMAINS
 
