@@ -2,7 +2,7 @@
 
 - Validate Email Addresses easily by using web requests(`GET` and passing `email` paramater)
 
-- Additional Information: [Click Here](https://hirusha-adi.github.io/Sri-Lanka-Covid-19-Dashboard/) 
+- Additional Information: [Click Here](https://hirusha-adi.github.io/Email-Validator/) 
 
 ## Available Routes
 
